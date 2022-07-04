@@ -19,7 +19,9 @@ def scrape_news(url):
 print('Content returned')
 
 #take url input, format returned response
-cnt = crape_news('https://news.ycombinator.com/')
+cnt = scrape_news('https://news.ycombinator.com/')
 content += cnt
 content += ('<br>--------------<br>')
 content +=('<br><br>This is we have for you')
+
+print(cnt)
