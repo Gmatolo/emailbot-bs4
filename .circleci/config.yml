@@ -6,4 +6,7 @@ orbs:
 jobs:
   build: # this can be any name you choose
     executor: python/default # use the default executor defined within the orb
-
+  steps:
+    - checkout # checkout source code
+    - python/install-packages:
+        pkg-manager: pip
