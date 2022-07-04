@@ -2,3 +2,8 @@ version: 2.1
 
 orbs:
   python: circleci/python@2.0.3
+
+jobs:
+  build: # this can be any name you choose
+    executor: python/default # use the default executor defined within the orb
+
