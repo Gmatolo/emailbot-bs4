@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-import requests
+import requests,smtplib
 from decouple import config
 #create email body
 from email.mime.multipart import MIMEMultipart
