@@ -52,5 +52,10 @@ msg['Subject'] = 'Top News Stories [Automated Email]' + ' ' + str(now.day) + '-'
     now.year)
 msg['From'] = FROM
 msg['To'] = TO
-
 msg.attach(MIMEText(content, 'html'))
+
+
+
+print('Initiating Server...')
+server = smtplib.SMTP(SERVER, PORT)
+server.ehlo()
