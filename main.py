@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
+from decouple import config
 
 content = ''
 print('Wait as we get the most trending news for you')
@@ -25,3 +26,10 @@ content += ('<br>--------------<br>')
 content +=('<br><br>This is we have for you')
 
 print(cnt)
+
+#Email authentication parameters
+SERVER = "smtp.gmail.com"
+PORT = '587'
+FROM = config('MYGMAIL')
+TO = config('MYGMAIL2')
+PASS = config('PASS')
