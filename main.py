@@ -48,3 +48,5 @@ print(PASS)
 
 #Compose email
 msg = MIMEMultipart()
+msg['Subject'] = 'Top News Stories [Automated Email]' + ' ' + str(now.day) + '-' + str(now.month) + '-' + str(
+    now.year)
