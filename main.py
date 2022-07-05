@@ -44,3 +44,7 @@ TO = config('MYGMAIL2')
 print(TO)
 PASS = config('PASS')
 print(PASS)
+
+
+#Compose email
+msg = MIMEMultipart()
