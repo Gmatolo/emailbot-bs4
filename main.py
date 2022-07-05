@@ -4,6 +4,9 @@ from decouple import config
 #create email body
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+import datetime
+
+now = datetime.datetime.now()
 
 content = ''
 print('Wait as we get the most trending news for you')
