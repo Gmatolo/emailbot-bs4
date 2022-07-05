@@ -33,5 +33,8 @@ SERVER = "smtp.gmail.com"
 PORT = '587'
 
 FROM = config('MYGMAIL')
+print(FROM)
 TO = config('MYGMAIL2')
+print(TO)
 PASS = config('PASS')
+print(PASS)
