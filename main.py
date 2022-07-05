@@ -50,3 +50,6 @@ print(PASS)
 msg = MIMEMultipart()
 msg['Subject'] = 'Top News Stories [Automated Email]' + ' ' + str(now.day) + '-' + str(now.month) + '-' + str(
     now.year)
+msg['From'] = FROM
+msg['To'] = TO
+
