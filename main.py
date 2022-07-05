@@ -46,7 +46,7 @@ PASS = config('PASS')
 print(PASS)
 
 
-#Compose email
+#Compose email, dynamic subject ensures emails are sent separately to each recipient
 msg = MIMEMultipart()
 msg['Subject'] = 'Top News Stories [Automated Email]' + ' ' + str(now.day) + '-' + str(now.month) + '-' + str(
     now.year)
