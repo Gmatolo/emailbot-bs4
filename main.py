@@ -28,8 +28,10 @@ content +=('<br><br>This is we have for you')
 print(cnt)
 
 #Email authentication parameters
+#Create email smtp server, and expose its port
 SERVER = "smtp.gmail.com"
 PORT = '587'
+
 FROM = config('MYGMAIL')
 TO = config('MYGMAIL2')
 PASS = config('PASS')
